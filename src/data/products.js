@@ -1,5 +1,12 @@
 export const products = [
   {
+  id: 7,
+  title: "Смарт-часы Glow",
+  price: 5599,
+  category: "Электроника",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdCzWAEkG3jCSTi0jH9bKxQIVaS03wz-Pz6g&s",
+  },
+  {
     id: 1,
     title: "Худи Oversize",
     price: 2499,
