@@ -24,9 +24,10 @@ export default function Header({
         <NavLink className="tab" to="/cart">Корзина ({cartCount})</NavLink>
       </nav>
 
-      {/* Поиск/фильтры показываем только на каталоге */}
+  
       {onCatalog && (
         <div className="tools">
+          
           <input
             className="search"
             value={query}
@@ -56,18 +57,6 @@ export default function Header({
           </select>
         </div>
       )}
-      <Header
-  query={query}
-  onQueryChange={setQuery}
-  cartCount={cartCount}
-  favCount={favs.length}
-  category={category}
-  onCategoryChange={setCategory}
-  sort={sort}
-  onSortChange={setSort}
-  categories={categories}
-/>
-
     </header>
   );
 }
