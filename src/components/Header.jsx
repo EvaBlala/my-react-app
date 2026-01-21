@@ -16,18 +16,26 @@ export default function Header({
 
   return (
     <header className="header">
-      <div className="logo">MiniMarket</div>
+     <NavLink to="/" className="logo">MiniMarket</NavLink>
+
 
       <nav className="nav">
         <NavLink className="tab" to="/">Каталог</NavLink>
-        <NavLink className="tab" to="/favorites">Избранное ({favCount})</NavLink>
-        <NavLink className="tab" to="/cart">Корзина ({cartCount})</NavLink>
+       <NavLink className="tab tab--badge" to="/favorites">
+  Избранное
+  {favCount > 0 && <span className="badgeCount">{favCount}</span>}
+</NavLink>
+
+<NavLink className="tab tab--badge" to="/cart">
+  Корзина
+  {cartCount > 0 && <span className="badgeCount">{cartCount}</span>}
+</NavLink>
+
       </nav>
 
-  
+      
       {onCatalog && (
         <div className="tools">
-          
           <input
             className="search"
             value={query}
@@ -57,6 +65,7 @@ export default function Header({
           </select>
         </div>
       )}
+
     </header>
   );
 }

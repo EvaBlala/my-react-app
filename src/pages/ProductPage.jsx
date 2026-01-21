@@ -33,7 +33,7 @@ export default function ProductPage({ onAdd }) {
           </div>
 
           <p className="muted">
-            Описание: это демо-магазин. Здесь может быть текст про материалы, размеры и доставку.
+            Описание товара
           </p>
 
           <button className="btn btn--primary" onClick={() => onAdd(product)}>

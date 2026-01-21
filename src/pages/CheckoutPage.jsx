@@ -19,14 +19,14 @@ export default function CheckoutPage({ cart, onClear }) {
   function submit(e) {
     e.preventDefault();
     if (!form.fullName.trim() || !form.phone.trim() || !form.address.trim()) {
-      alert("Заполни ФИО, телефон и адрес 🙂");
+      alert("Заполните ФИО, телефон и адрес");
       return;
     }
     if (cart.length === 0) {
-      alert("Корзина пустая 🙂");
+      alert("Корзина пустая");
       return;
     }
-    alert("Заказ оформлен (демо)! 🎉");
+    alert("Заказ оформлен");
     onClear();
   }
 

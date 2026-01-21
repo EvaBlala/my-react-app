@@ -13,7 +13,7 @@ export default function Cart({ cart, onInc, onDec, onRemove, onClose }) {
       </div>
 
       {cart.length === 0 ? (
-        <p className="muted">Пока пусто. Добавь что-нибудь 🙂</p>
+        <p className="muted">Пока пусто</p>
       ) : (
         <>
           <div className="cart__list">
