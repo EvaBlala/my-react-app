@@ -167,9 +167,9 @@ a {
   border: 1px solid var(--border);
   background: var(--card);
   border-radius: 18px;
-  overflow: hidden;          /* 🔥 важно */
-  display: flex;             /* 🔥 важно */
-  flex-direction: column;    /* 🔥 важно */
+  overflow: hidden;          
+  display: flex;             
+  flex-direction: column;    
 }
 
 .card__top {
